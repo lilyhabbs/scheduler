@@ -22,9 +22,27 @@ export default function useApplicationData(initial) {
         days: all[0].data,
         appointments: all[1].data,
         interviewers: all[2].data,
-      }))
+      }));
     })
   }, []);
+
+  const getSpots = (dayObj, appointments) => {
+    const nullAppointments = dayObj.appointments.filter(id => appointments[id].interview === null);
+    return nullAppointments.length;
+  };
+  
+  const updateSpots = (dayName, days, appointments) => {
+    const dayObj = days.find(day => day.name === dayName);
+    
+    const spots = getSpots(dayObj, appointments);
+  
+    const newDay = {
+      ...dayObj,
+      spots
+    };
+  
+    return days.map(day => day.name === dayName ? newDay : day);
+  };
 
   function bookInterview(id, interview) {
     const appointment = {
@@ -37,11 +55,14 @@ export default function useApplicationData(initial) {
       [id]: appointment
     };
 
+    const days = updateSpots(state.day, state.days, appointments);
+    
     return axios.put(`/api/appointments/${id}`, appointment)
-    .then(res => { 
+    .then(() => { 
       setState({
         ...state,
-        appointments
+        appointments,
+        days
       });
     });
   };
@@ -57,11 +78,14 @@ export default function useApplicationData(initial) {
       [id]: appointment
     };
 
+    const days = updateSpots(state.day, state.days, appointments);
+
     return axios.delete(`/api/appointments/${id}`)
-    .then(res => { 
+    .then(() => { 
       setState({
         ...state,
-        appointments
+        appointments,
+        days
       });
     });
   };
