@@ -41,7 +41,7 @@ export default function Appointment(props){
       .catch(err => transition(ERROR_SAVE, true));
   }
   
-  function deleteAppointment(event) {
+  function deleteAppointment() {
     transition(DELETING, true);
 
     props
