@@ -17,7 +17,7 @@ export default function useApplicationData() {
         return {
           ...state,
           days: action.days,
-          apointments: action.appointments,
+          appointments: action.appointments,
           interviewers: action.interviewers
         }
       case SET_INTERVIEW: {
