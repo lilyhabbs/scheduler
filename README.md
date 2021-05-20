@@ -1,23 +1,38 @@
 # Interview Scheduler
+A single-page React application that allows users to book and cancel interviews.
 
-## Setup
+## Screen shots
 
-Install dependencies with `npm install`.
+***Selecting a day***
+!["Selecting a day"](https://github.com/lilyhabbs/scheduler/blob/master/docs/select-day.gif)
 
-## Running Webpack Development Server
+***Booking an appointment***
+!["Booking an appointment"](https://github.com/lilyhabbs/scheduler/blob/master/docs/book-appt.gif)
 
-```sh
-npm start
-```
+***Editing an appointment***
+!["Editing an appointment"](https://github.com/lilyhabbs/scheduler/blob/master/docs/edit-appt.gif)
 
-## Running Jest Test Framework
+***Deleting an appointment***
+!["Deleting an appointment"](https://github.com/lilyhabbs/scheduler/blob/master/docs/delete-appt.gif)
 
-```sh
-npm test
-```
+***Error messages***
+!["Error message"](https://github.com/lilyhabbs/scheduler/blob/master/docs/errors.gif)
 
-## Running Storybook Visual Testbed
+***No spots available***
+!["No spots available"](https://github.com/lilyhabbs/scheduler/blob/master/docs/no-spots.gif)
 
-```sh
-npm run storybook
-```
+## Getting started
+
+1. Install dependencies with `npm install`.
+2. Start the webpack development server with `npm start`.
+3. Run the Jest test framework with `npm test`.
+4. Run the Storybook visual testbed with `npm run storybook`.
+
+## Dependencies
+
+- axios
+- classnames
+- normalize.css
+- react
+- react-dom
+- react-scripts
