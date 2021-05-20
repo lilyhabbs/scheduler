@@ -5,23 +5,25 @@ This app was developed using React, Webpack, Babel, Axios, Storybook and Express
 
 ## Screenshots
 
-***Selecting a day***
-
 !["Selecting a day"](https://github.com/lilyhabbs/scheduler/blob/master/docs/select-day.gif)
+*Selecting a day*
 
-***Booking an appointment***
 
 !["Booking an appointment"](https://github.com/lilyhabbs/scheduler/blob/master/docs/book-appt.gif)
-*Booking an appointment: with validation on form elements and spinner to show request is being processed*
+*Booking an appointment (with validation on form elements and spinner to show request is being processed)*
+
 
 !["Editing an appointment"](https://github.com/lilyhabbs/scheduler/blob/master/docs/edit-appt.gif)
-*Editing an appointment: with spinner to show request is being processed*
+*Editing an appointment (with spinner to show request is being processed)*
+
 
 !["Deleting an appointment"](https://github.com/lilyhabbs/scheduler/blob/master/docs/delete-appt.gif)
-*Deleting an appointment: with confirmation to delete and spinner to show request is being processed*
+*Deleting an appointment (with confirmation to delete and spinner to show request is being processed)*
+
 
 !["Error message"](https://github.com/lilyhabbs/scheduler/blob/master/docs/errors.gif)
 *Error messages when unable to save or delete an appointment*
+
 
 ## Getting started
 
