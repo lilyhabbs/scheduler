@@ -1,7 +1,9 @@
 # Interview Scheduler
-A single-page React application that allows users to book and cancel interviews.
+Interview scheduler is a single-page application that allows users to book, edit and cancel interviews, as well as view how many available appointments are remaining for each day.
 
-## Screen shots
+This app was developed using React, Webpack, Babel, Axios, Storybook and Express. Data is persisted by the API server using a PostgreSQL database. Unit testing, integration testing and end-to-end testing was completed using Jest and Cypress.
+
+## Screenshots
 
 ***Selecting a day***
 
@@ -10,22 +12,16 @@ A single-page React application that allows users to book and cancel interviews.
 ***Booking an appointment***
 
 !["Booking an appointment"](https://github.com/lilyhabbs/scheduler/blob/master/docs/book-appt.gif)
-
-***Editing an appointment***
+*Booking an appointment: with validation on form elements and spinner to show request is being processed*
 
 !["Editing an appointment"](https://github.com/lilyhabbs/scheduler/blob/master/docs/edit-appt.gif)
-
-***Deleting an appointment***
+*Editing an appointment: with spinner to show request is being processed*
 
 !["Deleting an appointment"](https://github.com/lilyhabbs/scheduler/blob/master/docs/delete-appt.gif)
-
-***Error messages***
+*Deleting an appointment: with confirmation to delete and spinner to show request is being processed*
 
 !["Error message"](https://github.com/lilyhabbs/scheduler/blob/master/docs/errors.gif)
-
-***No spots available***
-
-!["No spots available"](https://github.com/lilyhabbs/scheduler/blob/master/docs/no-spots.gif)
+*Error messages when unable to save or delete an appointment*
 
 ## Getting started
 
@@ -36,9 +32,22 @@ A single-page React application that allows users to book and cancel interviews.
 
 ## Dependencies
 
-- axios
-- classnames
-- normalize.css
-- react
-- react-dom
-- react-scripts
+- axios: ^0.21.1
+- classnames: ^2.2.6
+- normalize.css: ^8.0.1
+- react: ^16.9.0
+- react-dom: ^16.9.0
+- react-scripts: 3.0.0
+- babel/core: ^7.4.3
+- storybook/addon-actions: ^5.0.10
+- storybook/addon-backgrounds: ^5.0.10
+- storybook/addon-links: ^5.0.10
+- storybook/addons: ^5.0.10
+- storybook/react: ^5.0.10
+- testing-library/jest-dom: ^4.0.0
+- testing-library/react: ^8.0.7
+- testing-library/react-hooks: ^5.1.2
+- babel-loader: ^8.0.5
+- node-sass: ^4.14.0
+- prop-types: ^15.7.2
+- react-test-renderer: ^16.9.0    
